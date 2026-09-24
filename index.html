@@ -349,7 +349,7 @@
         }
 
         @media (max-width: 900px) {
-            .grid { grid-template-columns: 1.fr; }
+            .grid { grid-template-columns: 1fr; }
             .hero h1 { font-size: 38px; }
             header { padding: 0 20px; }
             .hero-buttons { flex-direction: column; width: 100%; }
@@ -370,8 +370,7 @@
         <nav>
             <a href="#features">Возможности</a>
             <a href="#about">О нас</a>
-            <!-- Кнопка в шапке ведет на скачивание -->
-            <a href="WpfApp3.exe" download="MixxiBoosterElite.exe" class="cta-nav" onclick="triggerDownload(event)">СКАЧАТЬ v5.2</a>
+            <a href="https://raw.githubusercontent.com/geimatveit-create/MixxiBooster/main/MixxiBooster.exe" class="cta-nav">СКАЧАТЬ v5.2</a>
         </nav>
     </header>
 
@@ -381,8 +380,7 @@
         <h1>Ускорь свой ПК и подними FPS <span>до абсолютного максимума</span></h1>
         <p>Элитный игровой комплекс для глубокой очистки системы, разгона процессора, мгновенного высвобождения памяти и радикального снижения пинга.</p>
         <div class="hero-buttons">
-            <!-- Главная кнопка скачивания. Замените 'WpfApp3.exe' на имя вашего скомпилированного файла -->
-            <a href="WpfApp3.exe" download="MixxiBoosterElite.exe" class="btn-primary" onclick="triggerDownload(event)">
+            <a href="https://raw.githubusercontent.com/geimatveit-create/MixxiBooster/main/MixxiBooster.exe" class="btn-primary">
                 <span>⚡ СКАЧАТЬ ДЛЯ WINDOWS</span>
             </a>
             <a href="#features" class="btn-secondary">УЗНАТЬ БОЛЬШЕ</a>
@@ -417,16 +415,6 @@
     <footer id="about">
         <p>&copy; 2026 <span>MixxiTeam Corp</span>. Все права защищены. Elite Gaming Suite v5.2.</p>
     </footer>
-
-    <!-- СКРИПТ ДЛЯ ПЛАВНОЙ ЗАГРУЗКИ / УВЕДОМЛЕНИЯ -->
-    <script>
-        function triggerDownload(e) {
-            // Если вы хотите сделать красивое уведомление при клике:
-            // e.preventDefault();
-            // alert('Загрузка MixxiBooster Elite началась!');
-            // window.location.href = e.currentTarget.href;
-        }
-    </script>
 
 </body>
 </html>
